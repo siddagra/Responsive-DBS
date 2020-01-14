@@ -147,8 +147,9 @@ img {
 .PerkTab {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	display: flex;
 	flex-direction: row;
+	display: flex;
+	text-transform: none;
 	width: 100%;
 	padding: 1%;
 }
@@ -156,6 +157,7 @@ img {
 	padding: 0.2%;
 	flex-direction: column;
 	display: flex;
+	width: 20%;
 	color: #fff;
 	text-align: center;
 }
@@ -244,6 +246,7 @@ img {
 	font-size: 0.9rem;
 }
 .PerkCardTitle {
+	text-transform: capitalize;
 	font-size: 2rem;
 	font-weight: 500;
 	margin-left: -5px;
@@ -280,36 +283,6 @@ img {
 .card-content {
 	font-size: 10px;
 }
-.idk {
-	display: flex;
-	flex-direction: row;
-	width: 90%;
-	margin: 10px;
-}
-@media only screen and (max-width: 900px) {
-	.PerkTab {
-		flex-direction: column !important;
-		width: 100% !important;
-	}
-	.ListPerkContainer {
-		width: 100% !important;
-	}
-	.PossibleBuildsTable {
-		width: 150% !important;
-		margin-left: 50% !important;
-	}
-	.MainBox {
-		width: 48%;
-		margin-left: 0;
-	}
-	.SelectedPerks {
-		width: 51.5%;
-		margin: 0;
-	}
-	.dadum {
-		height: 900px;
-	}
-}
 @media (hover: hover) {
 	.PerkButton:hover {
 		z-index: 5;
@@ -329,194 +302,4 @@ img {
 }
 .rankIcon:active {
 	transform: scale(0.9);
-}
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-html {
-	overflow: -moz-scrollbars-vertical;
-	overflow-y: scroll;
-}
-.MainContainer {
-	width: 85%;
-	margin: 1vh auto 0 auto;
-	display: grid;
-	grid-template-rows: auto auto 1fr;
-	grid-template-columns: 2fr 1fr;
-	grid-column-gap: 5px;
-	grid-template-areas:
-		"header aside"
-		"main aside"
-		"section aside"
-		"footer footer";
-}
-header {
-	grid-area: header;
-	padding: 5px;
-}
-main {
-	background-color: rgba(0, 0, 0, 0.7);
-	grid-area: main;
-}
-aside {
-	grid-area: aside;
-}
-section {
-	grid-area: section;
-}
-.BuildsTable {
-	padding: 5px;
-	background-color: rgba(12, 50, 50, 0.616);
-	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-}
-footer {
-	grid-area: footer;
-	margin-top: 100px;
-	background-color: maroon;
-	padding: 5px;
-	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-}
-.PerkSummary {
-	position: sticky;
-	top: 1vh;
-	padding: 5px;
-	height: 96vh;
-	background-color: rgba(12, 4, 102, 0.616);
-	overflow-y: auto;
-	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-}
-.ListPerkContainer {
-}
-
-body {
-	font-family: "Roboto", sans-serif;
-}
-
-.navWrapper {
-	width: 100%;
-	font-size: 1rem;
-	list-style: none;
-	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-	background-color: rgba(0, 0, 0, 0.1);
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
-.navWrapper a {
-	text-decoration: none;
-	color: white;
-	text-transform: uppercase;
-	padding: 0.6rem 0.6rem;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	transition-duration: 0.6s;
-}
-
-.navWrapper a.active {
-	color: #fff;
-}
-
-.navWrapper a i {
-	margin-right: 5px;
-}
-
-.navWrapper .selector {
-	height: 100%;
-	display: inline-block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	z-index: 1;
-	border-radius: 2rem;
-	transition-duration: 0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-	background: #05abe0;
-	background: -moz-linear-gradient(45deg, pink 0%, #8200f4 100%);
-	background: -webkit-linear-gradient(45deg, pink 0%, #8200f4 100%);
-	background: linear-gradient(45deg, pink 0%, #8200f4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05abe0', endColorstr='#8200f4', GradientType=1);
-}
-
-.child.slider {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-.slide {
-	padding: 2%;
-	height: 100%;
-	flex-shrink: 0;
-	scroll-snap-align: start;
-}
-.child.slider {
-	width: 100%;
-}
-
-.child.navWrapper {
-	display: none;
-}
-@media (max-aspect-ratio: 1600/960) {
-	.MainContainer {
-		width: 100%;
-		grid-template-columns: 5fr 2fr;
-		grid-template-areas:
-			"header aside"
-			"main aside"
-			"section aside"
-			"footer footer";
-	}
-}
-
-@media (max-aspect-ratio: 1350/960) {
-	.child.slider {
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	}
-}
-
-@media (max-aspect-ratio: 1090/960) {
-	.MainContainer {
-		margin-top: 0px;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"header"
-			"main"
-			"aside"
-			"section"
-			"footer";
-	}
-	.child.slider {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	}
-	.PerkSummary {
-		height: auto;
-	}
-}
-
-@media (max-aspect-ratio: 960/960) {
-	.child.slider {
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	}
-}
-
-@media (max-aspect-ratio: 575/960) {
-	.child.slider {
-		grid-template-columns: repeat(5, 100%);
-		overflow-x: auto;
-		scroll-snap-type: x mandatory;
-		-webkit-overflow-scrolling: touch;
-	}
-	.slider {
-		overflow-x: auto;
-	}
-	.ListPerkContainer {
-		width: 100%;
-		scroll-snap-align: start;
-	}
-	.child.navWrapper {
-		display: flex;
-	}
 }

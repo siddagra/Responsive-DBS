@@ -48,9 +48,9 @@ function checkLockbyID(WeaponOrArmor, g)
 			return true;
 	return false;
 }
-iweapon = [[{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [1, 4], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 4], perk: { j: 5, k: 1 } }, { id: 3, cell: [2, 4], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [4, 5], perk: { j: 4, k: 10 } }, { id: 11, cell: [4, 1], perk: { j: 3, k: 3 } }, { id: 12, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 16, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 18, cell: [4, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [4, 2], perk: { j: 5, k: 1 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [1, 3], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 1], perk: { j: 5, k: 1 } }, { id: 3, cell: [2, 3], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [3, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [3, 4], perk: { j: 3, k: 1 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [3, 5], perk: { j: 4, k: 10 } }, { id: 11, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 12, cell: [3, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [3, 2], perk: { j: 4, k: 5 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [3, 2], perk: { j: 2, k: 1 } }, { id: 16, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 18, cell: [3, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [3, 2], perk: { j: 5, k: 4 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [4, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [4, 3], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [4, 5], perk: { j: 4, k: 2 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 12, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 16, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 18, cell: [4, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [3, 1], perk: { j: 3, k: 0 } }, { id: 21, cell: [3, 1], perk: { j: 0, k: 0 } }, { id: 2, cell: [3, 1], perk: { j: 5, k: 1 } }, { id: 3, cell: [3, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [3, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [3, 4], perk: { j: 3, k: 1 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [3, 5], perk: { j: 4, k: 10 } }, { id: 11, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 12, cell: [3, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [3, 2], perk: { j: 4, k: 5 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [3, 2], perk: { j: 2, k: 1 } }, { id: 16, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 18, cell: [3, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [3, 2], perk: { j: 5, k: 1 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 4, cell: [4, 2], perk: { j: 0, k: 0 } }, { id: 4, cell: [4, 2], perk: { j: 0, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [3, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 5], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [1, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [2, 5], perk: { j: 4, k: 2 } }, { id: 11, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 12, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [2, 2], perk: { j: 2, k: 1 } }, { id: 22, cell: [3, 5], perk: { j: 0, k: 0 } }, { id: 16, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 18, cell: [4, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [4, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [4, 3], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 10, cell: [4, 5], perk: { j: 4, k: 2 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 12, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 13, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 23, cell: [4, 3], perk: { j: 0, k: 0 } }, { id: 14, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 15, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 16, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 17, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 18, cell: [4, 2], perk: { j: 2, k: 6 } }, { id: 19, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 20, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 127, cell: [1, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [1, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [1, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 2], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [4, 5], perk: { j: 0, k: 0 } }]];
-iarmor = [[{ id: 0, cell: 5, perk: { j: 2, k: 1 } }, { id: 21, cell: 1, perk: { j: 0, k: 0 } }, { id: 1, cell: 1, perk: { j: 1, k: 2 } }, { id: 2, cell: 3, perk: { j: 5, k: 1 } }, { id: 3, cell: 2, perk: { j: 4, k: 6 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 1, perk: { j: 1, k: 1 } }, { id: 6, cell: 4, perk: { j: 3, k: 7 } }, { id: 7, cell: 2, perk: { j: 1, k: 8 } }, { id: 8, cell: 4, perk: { j: 2, k: 0 } }, { id: 9, cell: 2, perk: { j: 2, k: 5 } }, { id: 10, cell: 5, perk: { j: 5, k: 7 } }, { id: 11, cell: 3, perk: { j: 3, k: 3 } }, { id: 12, cell: 1, perk: { j: 4, k: 10 } }, { id: 13, cell: 4, perk: { j: 5, k: 3 } }, { id: 23, cell: 4, perk: { j: 0, k: 0 } }, { id: 14, cell: 5, perk: { j: 5, k: 1 } }, { id: 15, cell: 4, perk: { j: 2, k: 3 } }, { id: 16, cell: 3, perk: { j: 3, k: 6 } }, { id: 22, cell: 3, perk: { j: 0, k: 0 } }, { id: 17, cell: 1, perk: { j: 1, k: 11 } }, { id: 18, cell: 2, perk: { j: 2, k: 4 } }, { id: 19, cell: 4, perk: { j: 5, k: 4 } }, { id: 20, cell: 3, perk: { j: 5, k: 6 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 1, perk: { j: 3, k: 6 } }, { id: 1, cell: 5, perk: { j: 3, k: 0 } }, { id: 2, cell: 3, perk: { j: 5, k: 1 } }, { id: 3, cell: 2, perk: { j: 4, k: 6 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 1, perk: { j: 1, k: 11 } }, { id: 6, cell: 4, perk: { j: 4, k: 8 } }, { id: 7, cell: 4, perk: { j: 4, k: 4 } }, { id: 8, cell: 5, perk: { j: 4, k: 9 } }, { id: 9, cell: 4, perk: { j: 3, k: 0 } }, { id: 10, cell: 1, perk: { j: 5, k: 7 } }, { id: 11, cell: 3, perk: { j: 1, k: 3 } }, { id: 12, cell: 4, perk: { j: 4, k: 10 } }, { id: 13, cell: 5, perk: { j: 4, k: 5 } }, { id: 14, cell: 5, perk: { j: 5, k: 3 } }, { id: 15, cell: 2, perk: { j: 2, k: 3 } }, { id: 16, cell: 3, perk: { j: 3, k: 6 } }, { id: 17, cell: 1, perk: { j: 1, k: 4 } }, { id: 18, cell: 2, perk: { j: 4, k: 1 } }, { id: 19, cell: 2, perk: { j: 5, k: 4 } }, { id: 20, cell: 3, perk: { j: 1, k: 7 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 3, perk: { j: 3, k: 6 } }, { id: 1, cell: 5, perk: { j: 3, k: 6 } }, { id: 2, cell: 5, perk: { j: 3, k: 8 } }, { id: 3, cell: 4, perk: { j: 1, k: 2 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 3, perk: { j: 3, k: 7 } }, { id: 6, cell: 3, perk: { j: 4, k: 8 } }, { id: 7, cell: 2, perk: { j: 2, k: 1 } }, { id: 8, cell: 3, perk: { j: 4, k: 6 } }, { id: 9, cell: 4, perk: { j: 4, k: 9 } }, { id: 10, cell: 5, perk: { j: 5, k: 1 } }, { id: 11, cell: 1, perk: { j: 3, k: 3 } }, { id: 12, cell: 4, perk: { j: 4, k: 2 } }, { id: 13, cell: 4, perk: { j: 5, k: 3 } }, { id: 14, cell: 2, perk: { j: 2, k: 3 } }, { id: 15, cell: 2, perk: { j: 4, k: 11 } }, { id: 16, cell: 5, perk: { j: 5, k: 7 } }, { id: 17, cell: 1, perk: { j: 1, k: 3 } }, { id: 18, cell: 2, perk: { j: 1, k: 12 } }, { id: 19, cell: 2, perk: { j: 1, k: 6 } }, { id: 20, cell: 1, perk: { j: 5, k: 6 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 4, perk: { j: 1, k: 5 } }, { id: 1, cell: 3, perk: { j: 3, k: 6 } }, { id: 2, cell: 5, perk: { j: 2, k: 4 } }, { id: 3, cell: 1, perk: { j: 2, k: 3 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 3, perk: { j: 1, k: 11 } }, { id: 6, cell: 3, perk: { j: 1, k: 3 } }, { id: 7, cell: 3, perk: { j: 2, k: 1 } }, { id: 8, cell: 5, perk: { j: 4, k: 9 } }, { id: 9, cell: 4, perk: { j: 3, k: 0 } }, { id: 10, cell: 1, perk: { j: 1, k: 6 } }, { id: 11, cell: 1, perk: { j: 1, k: 12 } }, { id: 12, cell: 4, perk: { j: 1, k: 8 } }, { id: 13, cell: 2, perk: { j: 2, k: 0 } }, { id: 14, cell: 2, perk: { j: 5, k: 3 } }, { id: 15, cell: 2, perk: { j: 1, k: 1 } }, { id: 16, cell: 5, perk: { j: 1, k: 7 } }, { id: 17, cell: 1, perk: { j: 1, k: 4 } }, { id: 18, cell: 5, perk: { j: 4, k: 1 } }, { id: 19, cell: 2, perk: { j: 5, k: 2 } }, { id: 20, cell: 5, perk: { j: 3, k: 0 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }]];
-perkListLength = [1, 13, 9, 9, 13, 11];
+iweapon = [[{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [1, 4], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 4], perk: { j: 5, k: 1 } }, { id: 3, cell: [2, 4], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [4, 5], perk: { j: 4, k: 10 } }, { id: 10, cell: [4, 1], perk: { j: 3, k: 3 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 15, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [4, 1], perk: { j: 3, k: 3 } }, { id: 17, cell: [4, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [4, 2], perk: { j: 5, k: 1 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [1, 3], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 1], perk: { j: 5, k: 1 } }, { id: 3, cell: [2, 3], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [3, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [3, 4], perk: { j: 3, k: 1 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [3, 5], perk: { j: 4, k: 10 } }, { id: 10, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 11, cell: [3, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [3, 2], perk: { j: 4, k: 5 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [3, 2], perk: { j: 2, k: 1 } }, { id: 15, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 17, cell: [3, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [3, 2], perk: { j: 5, k: 4 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [4, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [4, 3], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [4, 5], perk: { j: 4, k: 2 } }, { id: 10, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 15, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 17, cell: [4, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [3, 1], perk: { j: 3, k: 0 } }, { id: 20, cell: [3, 1], perk: { j: 0, k: 0 } }, { id: 2, cell: [3, 1], perk: { j: 5, k: 1 } }, { id: 3, cell: [3, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [3, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [3, 4], perk: { j: 3, k: 1 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [3, 5], perk: { j: 4, k: 10 } }, { id: 10, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 11, cell: [3, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [3, 2], perk: { j: 4, k: 5 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [3, 2], perk: { j: 2, k: 1 } }, { id: 15, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 17, cell: [3, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [3, 2], perk: { j: 5, k: 1 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 4, cell: [4, 2], perk: { j: 0, k: 0 } }, { id: 4, cell: [4, 2], perk: { j: 0, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [3, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [3, 5], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [1, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [2, 5], perk: { j: 4, k: 2 } }, { id: 10, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [2, 2], perk: { j: 2, k: 1 } }, { id: 21, cell: [3, 5], perk: { j: 0, k: 0 } }, { id: 15, cell: [3, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [3, 1], perk: { j: 3, k: 3 } }, { id: 17, cell: [4, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 0, cell: [3, 1], perk: { j: 2, k: 1 } }, { id: 1, cell: [4, 1], perk: { j: 3, k: 0 } }, { id: 2, cell: [4, 3], perk: { j: 5, k: 1 } }, { id: 3, cell: [4, 2], perk: { j: 4, k: 6 } }, { id: 4, cell: [0, 0], perk: { j: 0, k: 0 } }, { id: 5, cell: [4, 5], perk: { j: 3, k: 7 } }, { id: 6, cell: [3, 3], perk: { j: 3, k: 4 } }, { id: 7, cell: [4, 2], perk: { j: 4, k: 4 } }, { id: 8, cell: [3, 5], perk: { j: 3, k: 8 } }, { id: 9, cell: [4, 5], perk: { j: 4, k: 2 } }, { id: 10, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 11, cell: [4, 1], perk: { j: 4, k: 0 } }, { id: 12, cell: [4, 3], perk: { j: 4, k: 5 } }, { id: 22, cell: [4, 3], perk: { j: 0, k: 0 } }, { id: 13, cell: [4, 5], perk: { j: 4, k: 12 } }, { id: 14, cell: [4, 2], perk: { j: 2, k: 1 } }, { id: 15, cell: [4, 5], perk: { j: 4, k: 5 } }, { id: 16, cell: [4, 1], perk: { j: 4, k: 11 } }, { id: 17, cell: [4, 2], perk: { j: 2, k: 5 } }, { id: 18, cell: [4, 2], perk: { j: 5, k: 4 } }, { id: 19, cell: [3, 5], perk: { j: 3, k: 0 } }], [{ id: 127, cell: [1, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [1, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [1, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 2], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [2, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 3], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 4], perk: { j: 0, k: 0 } }, { id: 127, cell: [3, 5], perk: { j: 0, k: 0 } }, { id: 127, cell: [4, 5], perk: { j: 0, k: 0 } }]];
+iarmor = [[{ id: 0, cell: 5, perk: { j: 2, k: 1 } }, { id: 20, cell: 1, perk: { j: 0, k: 0 } }, { id: 1, cell: 1, perk: { j: 1, k: 2 } }, { id: 2, cell: 3, perk: { j: 5, k: 1 } }, { id: 3, cell: 2, perk: { j: 4, k: 6 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 1, perk: { j: 1, k: 1 } }, { id: 6, cell: 4, perk: { j: 3, k: 7 } }, { id: 7, cell: 2, perk: { j: 1, k: 8 } }, { id: 8, cell: 4, perk: { j: 2, k: 0 } }, { id: 9, cell: 5, perk: { j: 5, k: 7 } }, { id: 10, cell: 3, perk: { j: 3, k: 3 } }, { id: 11, cell: 1, perk: { j: 4, k: 10 } }, { id: 12, cell: 4, perk: { j: 5, k: 3 } }, { id: 22, cell: 4, perk: { j: 0, k: 0 } }, { id: 13, cell: 5, perk: { j: 5, k: 1 } }, { id: 14, cell: 4, perk: { j: 2, k: 3 } }, { id: 15, cell: 3, perk: { j: 3, k: 6 } }, { id: 21, cell: 3, perk: { j: 0, k: 0 } }, { id: 16, cell: 1, perk: { j: 1, k: 11 } }, { id: 17, cell: 2, perk: { j: 2, k: 4 } }, { id: 18, cell: 4, perk: { j: 5, k: 4 } }, { id: 19, cell: 3, perk: { j: 5, k: 6 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 1, perk: { j: 3, k: 6 } }, { id: 1, cell: 5, perk: { j: 3, k: 0 } }, { id: 2, cell: 3, perk: { j: 5, k: 1 } }, { id: 3, cell: 2, perk: { j: 4, k: 6 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 1, perk: { j: 1, k: 11 } }, { id: 6, cell: 4, perk: { j: 4, k: 8 } }, { id: 7, cell: 4, perk: { j: 4, k: 4 } }, { id: 8, cell: 5, perk: { j: 4, k: 9 } }, { id: 9, cell: 1, perk: { j: 5, k: 7 } }, { id: 10, cell: 3, perk: { j: 1, k: 3 } }, { id: 11, cell: 4, perk: { j: 4, k: 10 } }, { id: 12, cell: 5, perk: { j: 4, k: 5 } }, { id: 13, cell: 5, perk: { j: 5, k: 3 } }, { id: 14, cell: 2, perk: { j: 2, k: 3 } }, { id: 15, cell: 3, perk: { j: 3, k: 6 } }, { id: 16, cell: 1, perk: { j: 1, k: 4 } }, { id: 17, cell: 2, perk: { j: 4, k: 1 } }, { id: 18, cell: 2, perk: { j: 5, k: 4 } }, { id: 19, cell: 3, perk: { j: 1, k: 7 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 3, perk: { j: 3, k: 6 } }, { id: 1, cell: 5, perk: { j: 3, k: 6 } }, { id: 2, cell: 5, perk: { j: 3, k: 8 } }, { id: 3, cell: 4, perk: { j: 1, k: 2 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 3, perk: { j: 3, k: 7 } }, { id: 6, cell: 3, perk: { j: 4, k: 8 } }, { id: 7, cell: 2, perk: { j: 2, k: 1 } }, { id: 8, cell: 3, perk: { j: 4, k: 6 } }, { id: 9, cell: 5, perk: { j: 5, k: 1 } }, { id: 10, cell: 1, perk: { j: 3, k: 3 } }, { id: 11, cell: 4, perk: { j: 4, k: 2 } }, { id: 12, cell: 4, perk: { j: 5, k: 3 } }, { id: 13, cell: 2, perk: { j: 2, k: 3 } }, { id: 14, cell: 2, perk: { j: 4, k: 11 } }, { id: 15, cell: 5, perk: { j: 5, k: 7 } }, { id: 16, cell: 1, perk: { j: 1, k: 3 } }, { id: 17, cell: 2, perk: { j: 1, k: 12 } }, { id: 18, cell: 2, perk: { j: 1, k: 6 } }, { id: 19, cell: 1, perk: { j: 5, k: 6 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }], [{ id: 0, cell: 4, perk: { j: 1, k: 5 } }, { id: 1, cell: 3, perk: { j: 3, k: 6 } }, { id: 2, cell: 5, perk: { j: 2, k: 4 } }, { id: 3, cell: 1, perk: { j: 2, k: 3 } }, { id: 4, cell: 0, perk: { j: 0, k: 0 } }, { id: 5, cell: 3, perk: { j: 1, k: 11 } }, { id: 6, cell: 3, perk: { j: 1, k: 3 } }, { id: 7, cell: 3, perk: { j: 2, k: 1 } }, { id: 8, cell: 5, perk: { j: 4, k: 9 } }, { id: 9, cell: 1, perk: { j: 1, k: 6 } }, { id: 10, cell: 1, perk: { j: 1, k: 12 } }, { id: 11, cell: 4, perk: { j: 1, k: 8 } }, { id: 12, cell: 2, perk: { j: 2, k: 0 } }, { id: 13, cell: 2, perk: { j: 5, k: 3 } }, { id: 14, cell: 2, perk: { j: 1, k: 1 } }, { id: 15, cell: 5, perk: { j: 1, k: 7 } }, { id: 16, cell: 1, perk: { j: 1, k: 4 } }, { id: 17, cell: 5, perk: { j: 4, k: 1 } }, { id: 18, cell: 2, perk: { j: 5, k: 2 } }, { id: 19, cell: 5, perk: { j: 3, k: 0 } }, { id: 127, cell: 1, perk: { j: 0, k: 0 } }, { id: 127, cell: 2, perk: { j: 0, k: 0 } }, { id: 127, cell: 3, perk: { j: 0, k: 0 } }, { id: 127, cell: 4, perk: { j: 0, k: 0 } }, { id: 127, cell: 5, perk: { j: 0, k: 0 } }]];
+perkListLength = [1, 13, 8, 9, 13, 11];
 
 function search(indexPerk, indexPerkRank)
 {
@@ -352,6 +352,7 @@ function search(indexPerk, indexPerkRank)
 	}
 	filtSet = filtSet.sort(sortMatrix);
 	this.console.timeEnd("search")
+	this.console.time("bonuses")
 	//Cell calculations----------------------
 	//init variables
 	var bonusCells = [],
@@ -359,6 +360,8 @@ function search(indexPerk, indexPerkRank)
 	var bonusPerks = [],
 		tempbonusPerkMat = [],
 		tempbonusPerk;
+	var matSizeCount = -1;
+	var dbLinks = [];
 	var filtSetLength = filtSet.length;
 	var cellFilled = [];
 	var setWidth = armorTypeLength + 3;
@@ -429,34 +432,32 @@ function search(indexPerk, indexPerkRank)
 				{
 					if (iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0] == indexPerk[h].j && tempperk[h] > 0 && cellFilled[armorTypeLength] == false)
 					{
-						filtSetCells[i][armorTypeLength].j = indexPerk[h].j;
-						filtSetCells[i][armorTypeLength].k = indexPerk[h].k;
-						cellFilled[armorTypeLength] = true;
+						filtSetCells[i][armorTypeLength].j = indexPerk[h].j,
+							filtSetCells[i][armorTypeLength].k = indexPerk[h].k,
+							cellFilled[armorTypeLength] = true;
 						tempperk[h]--;
 					}
 					if (iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1] == indexPerk[h].j && tempperk[h] > 0 && cellFilled[armorTypeLength + 1] == false)
 					{
-						filtSetCells[i][armorTypeLength + 1].j = indexPerk[h].j;
-						filtSetCells[i][armorTypeLength + 1].k = indexPerk[h].k;
-						cellFilled[armorTypeLength + 1] = true;
-						tempperk[h]--;
+						filtSetCells[i][armorTypeLength + 1].j = indexPerk[h].j,
+							filtSetCells[i][armorTypeLength + 1].k = indexPerk[h].k,
+							cellFilled[armorTypeLength + 1] = true,
+							tempperk[h]--;
 					}
 				}
 				else
 				{
 					if (tempperk[h] > 0 && cellFilled[armorTypeLength] == false)
-					{
-						filtSetCells[i][armorTypeLength].j = indexPerk[h].j;
-						filtSetCells[i][armorTypeLength].k = indexPerk[h].k;
+						filtSetCells[i][armorTypeLength].j = indexPerk[h].j,
+						filtSetCells[i][armorTypeLength].k = indexPerk[h].k,
 						cellFilled[armorTypeLength] = true;
-						tempperk[h]--;
-					}
+					tempperk[h]--;
 					if (tempperk[h] > 0 && cellFilled[armorTypeLength + 1] == false)
 					{
-						filtSetCells[i][armorTypeLength + 1].j = indexPerk[h].j;
-						filtSetCells[i][armorTypeLength + 1].k = indexPerk[h].k;
-						cellFilled[armorTypeLength + 1] = true;
-						tempperk[h]--;
+						filtSetCells[i][armorTypeLength + 1].j = indexPerk[h].j,
+							filtSetCells[i][armorTypeLength + 1].k = indexPerk[h].k,
+							cellFilled[armorTypeLength + 1] = true,
+							tempperk[h]--;
 					}
 				}
 			}
@@ -471,32 +472,21 @@ function search(indexPerk, indexPerkRank)
 				}
 			}
 			//bonus cells from weapon 1
-			if (!legendaryWeapon)
+			if (cellFilled[armorTypeLength] == false)
 			{
-				if (cellFilled[armorTypeLength] == false)
+				tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]]++;
+				if (bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]] < tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]])
 				{
-					tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]]++;
-					if (bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]] < tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]])
-					{
-						bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]] = tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]]
-					}
-				}
-				//bonus cells from weapon 2
-				if (cellFilled[armorTypeLength + 1] == false)
-				{
-					tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]]++;
-					if (bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]] < tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]])
-					{
-						bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]] = tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]]
-					}
+					bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]] = tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[0]]
 				}
 			}
-			else
+			//bonus cells from weapon 2
+			if (cellFilled[armorTypeLength + 1] == false)
 			{
-				if (cellFilled[armorTypeLength + 1] == false && cellFilled[armorTypeLength] == false)
+				tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]]++;
+				if (bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]] < tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]])
 				{
-					greenLight = true;
-					filtSetCells = [];
+					bonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]] = tempbonusCells[iweapon[filtSet[i][armorTypeLength]][filtSet[i][armorTypeLength + 1]].cell[1]]
 				}
 			}
 			//bonus cells from lantern
@@ -699,7 +689,7 @@ function processFiltSetelem(i)
 				filtSetCells[i][armorTypeLength + 2].k = indexPerk[h].k,
 				cellFilled[armorTypeLength + 2] = true,
 				tempperk[h]--;
-			//fill weapon cells
+			console.log(tempperk[h]);
 			//fill weapon cells
 			if (!legendaryWeapon)
 			{
@@ -720,18 +710,7 @@ function processFiltSetelem(i)
 			}
 			else
 			{
-				if (tempperk[h] > 0 && cellFilled[armorTypeLength] == false)
-					filtSetCells[i][armorTypeLength].j = indexPerk[h].j,
-					filtSetCells[i][armorTypeLength].k = indexPerk[h].k,
-					cellFilled[armorTypeLength] = true;
-				tempperk[h]--;
-				if (tempperk[h] > 0 && cellFilled[armorTypeLength + 1] == false)
-				{
-					filtSetCells[i][armorTypeLength + 1].j = indexPerk[h].j,
-						filtSetCells[i][armorTypeLength + 1].k = indexPerk[h].k,
-						cellFilled[armorTypeLength + 1] = true,
-						tempperk[h]--;
-				}
+				console.log(tempperk[h])
 			}
 		}
 	}

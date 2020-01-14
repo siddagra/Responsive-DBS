@@ -1,4 +1,6 @@
-const cellType = [
+
+const cellType = 
+[
 	'None',
 	'Defence',
 	'Mobility',
@@ -6,7 +8,8 @@ const cellType = [
 	'Technique',
 	'Utility'
 ]
-const weaponType = [
+const Type = 
+[
 	'Aether Strikers',
 	'Axe',
 	'Chain Blades',
@@ -15,13 +18,15 @@ const weaponType = [
 	'Sword',
 	'War Pike'
 ]
-const armorType = [
+const armorType = 
+[
 	'Head',
 	'Torso',
 	'Arms',
 	'Legs'
 ]
-const idList = [
+const idList = 
+[
 	'Boreus',
 	'Charrogg',
 	'Drask',
@@ -31,7 +36,6 @@ const idList = [
 	'Hellion',
 	'Kharabak',
 	'Koshai',
-	'Malkarion',
 	'Nayzaga',
 	'Pangar',
 	'Quillshot',
@@ -47,7 +51,8 @@ const idList = [
 	'Shrowd Exotic',
 	'Rezakiri Exotic'
 ]
-const behemothList = [
+const behemothList = 
+[
 	'Boreus',
 	'Charrogg',
 	'Drask',
@@ -68,7 +73,8 @@ const behemothList = [
 	'Stormclaw',
 	'Valomyr'
 ]
-const armorResistanceValues = [
+const armorResistanceValues = 
+[
 	25,
 	35,
 	45,
@@ -86,7 +92,8 @@ const armorResistanceValues = [
 	135,
 	137.5
 ]
-const armorPerkValues = [
+const armorPerkValues = 
+[
 	1,
 	1,
 	1,
@@ -104,7 +111,8 @@ const armorPerkValues = [
 	3,
 	3
 ]
-const weaponPowerValues = [
+const PowerValues = 
+[
 	100,
 	140,
 	180,
@@ -122,7 +130,8 @@ const weaponPowerValues = [
 	540,
 	550
 ]
-const weaponPerkValues = [
+const PerkValues = 
+[
 	1,
 	1,
 	1,
@@ -140,52 +149,52 @@ const weaponPerkValues = [
 	3,
 	3
 ]
-const perkList = [
+const perkList = 
+[
 	[
-	{
-		name: 'None',
-		index: 0,
-		type:
 		{
 			name: 'None',
-			index: 0
-		},
-		description: 'No effect',
-		key: 'no_effect',
-		effect: [
-			{
-				description: 'No effect',
-				value: 0
+			index: 0,
+			type: {
+				name: 'None',
+				index: 0
 			},
-			{
-				description: 'No effect',
-				value: 0
-			},
-			{
-				description: 'No effect.',
-				value: 0
-			},
-			{
-				description: 'No effect.',
-				value: 0
-			},
-			{
-				description: 'No effect.',
-				value: 0
-			},
-			{
-				description: 'No effect.',
-				value: 0
-			}
-		],
-		DBmap: 0,
-		map: 0
-	}],
+			description: 'No effect',
+			key: 'no_effect',
+			effect: [
+				{
+					description: 'No effect',
+					value: 0
+				},
+				{
+					description: 'No effect',
+					value: 0
+				},
+				{
+					description: 'No effect.',
+					value: 0
+				},
+				{
+					description: 'No effect.',
+					value: 0
+				},
+				{
+					description: 'No effect.',
+					value: 0
+				},
+				{
+					description: 'No effect.',
+					value: 0
+				}
+			],
+			map: 0,
+			DBmap: 0
+		}
+	],
 	[
 		{
 			name: 'Assassin\'s Vigour',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Grants Health after breaking a Behemoth part.',
@@ -221,8 +230,7 @@ const perkList = [
 		},
 		{
 			name: 'Bloodless',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Protects against Wounded and Crippling Wounds statuses.',
@@ -297,8 +305,7 @@ const perkList = [
 		},
 		{
 			name: 'Fireproof',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Protects against being set on fire.',
@@ -334,8 +341,7 @@ const perkList = [
 		},
 		{
 			name: 'Fortress',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Grants a small shield after avoiding damage for a short time.',
@@ -371,8 +377,7 @@ const perkList = [
 		},
 		{
 			name: 'Guardian',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Grant a portion of any shield applied to your nearest ally.',
@@ -408,8 +413,7 @@ const perkList = [
 		},
 		{
 			name: 'Iceborne',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Increases Defence when at low health, and at later ranks, grants life steal',
@@ -484,8 +488,7 @@ const perkList = [
 		},
 		{
 			name: 'Insulated',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Protects against Shocked status effect and allows you to attack electric shields.',
@@ -560,8 +563,7 @@ const perkList = [
 		},
 		{
 			name: 'Nine Lives',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Grants a chance to reduce damage, and later the ability to cheat death.',
@@ -636,8 +638,7 @@ const perkList = [
 		},
 		{
 			name: 'Shellshock Resist',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Protects against the explosion damage and status effect of Shellshock.',
@@ -673,8 +674,7 @@ const perkList = [
 		},
 		{
 			name: 'Strategist',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Reduces max health. Dodging through Behemoth attacks grants health shields to all Slayers.',
@@ -749,8 +749,7 @@ const perkList = [
 		},
 		{
 			name: 'Sturdy',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Prevents being staggered on a cooldown.',
@@ -786,8 +785,7 @@ const perkList = [
 		},
 		{
 			name: 'Tough',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Increases Max Health.',
@@ -862,8 +860,7 @@ const perkList = [
 		},
 		{
 			name: 'Warmth',
-			type:
-			{
+			type: {
 				name: 'Defence'
 			},
 			description: 'Protects against Chilled and Frozen status effects.',
@@ -940,8 +937,7 @@ const perkList = [
 	[
 		{
 			name: 'Agility',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Reduces the stamina cost of dodging.',
@@ -977,8 +973,7 @@ const perkList = [
 		},
 		{
 			name: 'Conditioning',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Increases Stamina Regen.',
@@ -1014,8 +1009,7 @@ const perkList = [
 		},
 		{
 			name: 'Endurance',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Increases Max Stamina.',
@@ -1051,8 +1045,7 @@ const perkList = [
 		},
 		{
 			name: 'Evasion',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Increases the time you are invincible when dodging.',
@@ -1088,8 +1081,7 @@ const perkList = [
 		},
 		{
 			name: 'Fleet Footed',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Temporarily increases Movement Speed after a dodge.',
@@ -1124,91 +1116,8 @@ const perkList = [
 			DBmap: 51
 		},
 		{
-			name: 'Grace',
-			type:
-			{
-				name: 'Mobility'
-			},
-			description: 'Sprinting increases movespeed. At higher levels, converts increased movespeed to attack speed.',
-			key: [
-				'IncreasedMovementSpeed',
-				'IncreasedAttackSpeed'
-			],
-			effect: [
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 5%',
-						null
-					],
-					value: [
-						0.05,
-						null
-					]
-				},
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 8%',
-						null
-					],
-					value: [
-						0.08,
-						null
-					]
-				},
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 11%',
-						null
-					],
-					value: [
-						0.11,
-						null
-					]
-				},
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 14%',
-						'After sprinting, gain attack speed equal to Grace\'s bonus movespeed for 10 seconds'
-					],
-					value: [
-						0.14,
-						0.14
-					]
-				},
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 17%',
-						'After sprinting, gain attack speed equal to Grace\'s bonus movespeed for 10 seconds'
-					],
-					value: [
-						0.17,
-						0.17
-					]
-				},
-				{
-					description: [
-						'While sprinting',
-						'gain movespeed up to 20%',
-						'After sprinting, gain attack speed equal to Grace\'s bonus movespeed for 10 seconds'
-					],
-					value: [
-						0.2,
-						0.2
-					]
-				}
-			],
-			map: 19,
-			DBmap: 165
-		},
-		{
 			name: 'Nimble',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Restores Stamina when dodging through Behemoth attacks.',
@@ -1239,13 +1148,12 @@ const perkList = [
 					value: 35
 				}
 			],
-			map: 20,
+			map: 19,
 			DBmap: 54
 		},
 		{
 			name: 'Sprinter',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
 			description: 'Reduces max stamina. Increases movespeed and reduces sprint cost.',
@@ -1315,17 +1223,16 @@ const perkList = [
 					]
 				}
 			],
-			map: 21,
+			map: 20,
 			DBmap: 159
 		},
 		{
 			name: 'Swift',
-			type:
-			{
+			type: {
 				name: 'Mobility'
 			},
-			description: 'Increases Movement Speed when your weapon is sheathed.',
-			key: 'sheathed_weapon_movement_speed',
+			description: 'Increases Movement Speed when your  is sheathed.',
+			key: 'sheathed__movement_speed',
 			effect: [
 				{
 					description: 'While sheathed, increases Movement Speed by 5%',
@@ -1352,15 +1259,14 @@ const perkList = [
 					value: 1.3
 				}
 			],
-			map: 22,
+			map: 21,
 			DBmap: 57
 		}
 	],
 	[
 		{
 			name: 'Aetherhunter',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Increases damage against aether charged Behemoths.',
@@ -1391,13 +1297,12 @@ const perkList = [
 					value: 1.5
 				}
 			],
-			map: 23,
+			map: 22,
 			DBmap: 60
 		},
 		{
 			name: 'Deconstruction',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Bonus damage against objects created by Behemoths.',
@@ -1428,13 +1333,12 @@ const perkList = [
 					value: 2
 				}
 			],
-			map: 24,
+			map: 23,
 			DBmap: 63
 		},
 		{
 			name: 'Discipline',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Prevents you from having over half health. Increases critical strike chance.',
@@ -1504,13 +1408,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 25,
+			map: 24,
 			DBmap: 156
 		},
 		{
 			name: 'Knockout King',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Percent increase to Stagger damage.',
@@ -1580,13 +1483,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 26,
+			map: 25,
 			DBmap: 66
 		},
 		{
 			name: 'Overpower',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Increases damage against staggered Behemoths.',
@@ -1617,13 +1519,12 @@ const perkList = [
 					value: 1.6
 				}
 			],
-			map: 27,
+			map: 26,
 			DBmap: 69
 		},
 		{
 			name: 'Pacifier',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Increases stagger damage against enraged Behemoths.',
@@ -1654,13 +1555,12 @@ const perkList = [
 					value: 1.6
 				}
 			],
-			map: 28,
+			map: 27,
 			DBmap: 72
 		},
 		{
 			name: 'Rage',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Increases your damage when your health is low.',
@@ -1691,13 +1591,12 @@ const perkList = [
 					value: 1.25
 				}
 			],
-			map: 29,
+			map: 28,
 			DBmap: 75
 		},
 		{
 			name: 'Ragehunter',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Increases damage against enraged Behemoths.',
@@ -1728,13 +1627,12 @@ const perkList = [
 					value: 1.4
 				}
 			],
-			map: 30,
+			map: 29,
 			DBmap: 78
 		},
 		{
 			name: 'Sharpened',
-			type:
-			{
+			type: {
 				name: 'Power'
 			},
 			description: 'Percent increase to Part damage.',
@@ -1804,15 +1702,14 @@ const perkList = [
 					]
 				}
 			],
-			map: 31,
+			map: 30,
 			DBmap: 81
 		}
 	],
 	[
 		{
 			name: 'Acidic',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases Wound damage at the cost of Part damage.',
@@ -1882,13 +1779,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 32,
+			map: 31,
 			DBmap: 84
 		},
 		{
 			name: 'Adrenaline',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases damage dealt based on stamina spent.',
@@ -1919,13 +1815,12 @@ const perkList = [
 					value: 1.018
 				}
 			],
-			map: 33,
+			map: 32,
 			DBmap: 87
 		},
 		{
 			name: 'Barbed',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Adds a flat amount of Wound damage on hit.',
@@ -1995,13 +1890,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 34,
+			map: 33,
 			DBmap: 90
 		},
 		{
 			name: 'Berserker',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Reduces max health. Dealing damage stacks increased damage dealt for a short period.',
@@ -2071,13 +1965,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 35,
+			map: 34,
 			DBmap: 147
 		},
 		{
 			name: 'Bladestorm',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Adds a flat amount of Part damage on hit.',
@@ -2147,13 +2040,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 36,
+			map: 35,
 			DBmap: 93
 		},
 		{
 			name: 'Cunning',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Grants a chance to deal double damage.',
@@ -2184,13 +2076,12 @@ const perkList = [
 					value: 0.1
 				}
 			],
-			map: 37,
+			map: 36,
 			DBmap: 96
 		},
 		{
 			name: 'Evasive Fury',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Temporarily increases attack speed when dodging through a Behemoth\'s attack.',
@@ -2221,13 +2112,12 @@ const perkList = [
 					value: 0.2
 				}
 			],
-			map: 38,
+			map: 37,
 			DBmap: 99
 		},
 		{
 			name: 'Merciless',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases Wound damage against staggered Behemoths.',
@@ -2258,13 +2148,12 @@ const perkList = [
 					value: 100
 				}
 			],
-			map: 39,
+			map: 38,
 			DBmap: 102
 		},
 		{
 			name: 'Molten',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Generates Molten Hearts when dealing damage.',
@@ -2295,13 +2184,12 @@ const perkList = [
 					value: 1.1
 				}
 			],
-			map: 40,
+			map: 39,
 			DBmap: 105
 		},
 		{
 			name: 'Predator',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases damage after avoiding damage for a short time.',
@@ -2332,13 +2220,12 @@ const perkList = [
 					value: 1.35
 				}
 			],
-			map: 41,
+			map: 40,
 			DBmap: 108
 		},
 		{
 			name: 'Savagery',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases damage against Wounded parts.',
@@ -2369,13 +2256,12 @@ const perkList = [
 					value: 2
 				}
 			],
-			map: 42,
+			map: 41,
 			DBmap: 111
 		},
 		{
 			name: 'Weighted Strikes',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Adds a flat amount of Stagger damage on hit. At later ranks, allows more weapon attacks to interrupt.',
@@ -2458,13 +2344,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 43,
+			map: 42,
 			DBmap: 114
 		},
 		{
 			name: 'Wild Frenzy',
-			type:
-			{
+			type: {
 				name: 'Technique'
 			},
 			description: 'Increases Attack Speed when at low health.',
@@ -2495,15 +2380,14 @@ const perkList = [
 					value: 1.2
 				}
 			],
-			map: 44,
+			map: 43,
 			DBmap: 117
 		}
 	],
 	[
 		{
 			name: 'Aetherborne',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Increases the benefits of using aether vents.',
@@ -2573,13 +2457,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 45,
+			map: 44,
 			DBmap: 120
 		},
 		{
 			name: 'Aetheric Attunement',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Percent increase to Lantern Charge gained from attacks.',
@@ -2610,13 +2493,12 @@ const perkList = [
 					value: 1.5
 				}
 			],
-			map: 46,
+			map: 45,
 			DBmap: 123
 		},
 		{
 			name: 'Aetheric Frenzy',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Gains a flat amount of Lantern Charge on each weapon hit.',
@@ -2647,13 +2529,12 @@ const perkList = [
 					value: 12.5
 				}
 			],
-			map: 47,
+			map: 46,
 			DBmap: 126
 		},
 		{
 			name: 'Conduit',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Using a Lantern\'s hold ability increases all Slayers\' attack speed temporarily.',
@@ -2684,13 +2565,12 @@ const perkList = [
 					value: 1.15
 				}
 			],
-			map: 48,
+			map: 47,
 			DBmap: 129
 		},
 		{
 			name: 'Energized',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Increase weapon meter gain rate.',
@@ -2721,13 +2601,12 @@ const perkList = [
 					value: 0.4
 				}
 			],
-			map: 49,
+			map: 48,
 			DBmap: 132
 		},
 		{
 			name: 'Engineer',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Reduces healing from Slayer flask. Increases range of pylons.',
@@ -2797,13 +2676,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 50,
+			map: 49,
 			DBmap: 153
 		},
 		{
 			name: 'Lucent',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Flask heals over time and generates lantern charge.',
@@ -2885,13 +2763,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 51,
+			map: 50,
 			DBmap: 135
 		},
 		{
 			name: 'Medic',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Improves your ability to revive allies.',
@@ -2974,13 +2851,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 52,
+			map: 51,
 			DBmap: 138
 		},
 		{
 			name: 'Mender',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Reduces healing from Slayer Flask. Using your flask restores other Slayers\' health.',
@@ -3050,13 +2926,12 @@ const perkList = [
 					]
 				}
 			],
-			map: 53,
+			map: 52,
 			DBmap: 162
 		},
 		{
 			name: 'Stunning Vigour',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Restores some health whenever a Behemoth is staggered.',
@@ -3087,13 +2962,12 @@ const perkList = [
 					value: 200
 				}
 			],
-			map: 54,
+			map: 53,
 			DBmap: 141
 		},
 		{
 			name: 'Vampiric',
-			type:
-			{
+			type: {
 				name: 'Utility'
 			},
 			description: 'Restores some health whenever a Behemoth part is Wounded.',
@@ -3124,12 +2998,13 @@ const perkList = [
 					value: 200
 				}
 			],
-			map: 55,
+			map: 54,
 			DBmap: 144
 		}
 	]
 ]
-const head = [
+const head = 
+[
 	{
 		type: 'Head',
 		id: 'Boreus',
@@ -3138,8 +3013,7 @@ const head = [
 		icon: '/assets/icons/armours/boreus/BorealEpiphany.png',
 		element: 'Frost',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Conditioning',
 			type: 'Mobility'
 		},
@@ -3155,8 +3029,7 @@ const head = [
 		icon: '/assets/icons/armours/charrogg/TheSkullforge.png',
 		element: 'Blaze',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
@@ -3172,8 +3045,7 @@ const head = [
 		icon: '/assets/icons/armours/charrogg/VolcanicHelm.png',
 		element: 'Blaze',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Fireproof',
 			type: 'Defence'
 		},
@@ -3189,8 +3061,7 @@ const head = [
 		icon: '/assets/icons/armours/drask/DraskscaleHelmet.png',
 		element: 'Shock',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Aetheric Attunement',
 			type: 'Utility'
 		},
@@ -3206,8 +3077,7 @@ const head = [
 		icon: '/assets/icons/armours/embermane/FieryHelm.png',
 		element: 'Blaze',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Evasive Fury',
 			type: 'Technique'
 		},
@@ -3223,8 +3093,7 @@ const head = [
 		icon: '/assets/icons/armours/generic/RecruitsMask.png',
 		element: 'Neutral',
 		cell: 'None',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
@@ -3240,8 +3109,7 @@ const head = [
 		icon: '/assets/icons/armours/gnasher/GnasherCap.png',
 		element: 'Neutral',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Bloodless',
 			type: 'Defence'
 		},
@@ -3257,8 +3125,7 @@ const head = [
 		icon: '/assets/icons/armours/hellion/HellplateCasque.png',
 		element: 'Blaze',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Ragehunter',
 			type: 'Power'
 		},
@@ -3274,8 +3141,7 @@ const head = [
 		icon: '/assets/icons/armours/kharabak/EyeOfTheSwarm.png',
 		element: 'Terra',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Shellshock Resist',
 			type: 'Defence'
 		},
@@ -3291,8 +3157,7 @@ const head = [
 		icon: '/assets/icons/armours/koshai/VisageOfThorns.png',
 		element: 'Terra',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Agility',
 			type: 'Mobility'
 		},
@@ -3302,36 +3167,18 @@ const head = [
 	},
 	{
 		type: 'Head',
-		id: 'Malkarion',
-		name: 'Malkarion\'s Sight',
-		description: 'Head protection forged from Malkarion trophies.',
-		icon: '/assets/icons/armours/malkarion/MalkarionsSight.png',
-		element: 'Shock',
-		cell: 'Mobility',
-		perk:
-		{
-			name: 'Grace',
-			type: 'Mobility'
-		},
-		effect: 0,
-		map: 10,
-		DBmap: 86
-	},
-	{
-		type: 'Head',
 		id: 'Nayzaga',
 		name: 'Shocking Gaze',
 		description: 'Head protection forged from Nayzaga trophies.',
 		icon: '/assets/icons/armours/nayzaga/ShockingGaze.png',
 		element: 'Shock',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Medic',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 11,
+		map: 10,
 		DBmap: 38
 	},
 	{
@@ -3342,13 +3189,12 @@ const head = [
 		icon: '/assets/icons/armours/pangar/BrowOfIce.png',
 		element: 'Frost',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Knockout King',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 12,
+		map: 11,
 		DBmap: 43
 	},
 	{
@@ -3359,13 +3205,12 @@ const head = [
 		icon: '/assets/icons/armours/quillshot/QuillspikeMask.png',
 		element: 'Neutral',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Savagery',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 13,
+		map: 12,
 		DBmap: 49
 	},
 	{
@@ -3376,13 +3221,12 @@ const head = [
 		icon: '/assets/icons/armours/rezakiri/LightsCrown.png',
 		element: 'Radiant',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Conduit',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 14,
+		map: 13,
 		DBmap: 50
 	},
 	{
@@ -3393,13 +3237,12 @@ const head = [
 		icon: '/assets/icons/armours/rezakiri/PrismaticGrace.png',
 		element: 'Radiant',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
 		effect: 'After reviving another player, grant them a Radiant Prism that blocks incoming damage for 5 seconds.',
-		map: 15,
+		map: 14,
 		DBmap: 54
 	},
 	{
@@ -3410,13 +3253,12 @@ const head = [
 		icon: '/assets/icons/armours/riftstalker/GuiseOfTheRift.png',
 		element: 'Umbral',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Aetheric Attunement',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 16,
+		map: 15,
 		DBmap: 55
 	},
 	{
@@ -3427,13 +3269,12 @@ const head = [
 		icon: '/assets/icons/armours/shrike/ShrikedownHelm.png',
 		element: 'Neutral',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Evasion',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 17,
+		map: 16,
 		DBmap: 61
 	},
 	{
@@ -3444,13 +3285,12 @@ const head = [
 		icon: '/assets/icons/armours/shrowd/DarkWatch.png',
 		element: 'Umbral',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 18,
+		map: 17,
 		DBmap: 66
 	},
 	{
@@ -3461,13 +3301,12 @@ const head = [
 		icon: '/assets/icons/armours/shrowd/TragicEcho.png',
 		element: 'Umbral',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
 		effect: 'Upon your first death, become a shadow clone that deals 100% increased damage for 15 seconds.',
-		map: 19,
+		map: 18,
 		DBmap: 67
 	},
 	{
@@ -3478,13 +3317,12 @@ const head = [
 		icon: '/assets/icons/armours/skarn/SightOfStone.png',
 		element: 'Terra',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Tough',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 20,
+		map: 19,
 		DBmap: 71
 	},
 	{
@@ -3495,13 +3333,12 @@ const head = [
 		icon: '/assets/icons/armours/skraev/SkraevwingHelmet.png',
 		element: 'Frost',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Fleet Footed',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 21,
+		map: 20,
 		DBmap: 74
 	},
 	{
@@ -3512,13 +3349,12 @@ const head = [
 		icon: '/assets/icons/armours/stormclaw/LightningHelm.png',
 		element: 'Shock',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Energized',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 22,
+		map: 21,
 		DBmap: 78
 	},
 	{
@@ -3529,17 +3365,17 @@ const head = [
 		icon: '/assets/icons/armours/valomyr/CrestOfValour.png',
 		element: 'Radiant',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Lucent',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 23,
+		map: 22,
 		DBmap: 81
 	}
 ]
-const torso = [
+const torso = 
+[
 	{
 		type: 'Torso',
 		id: 'Boreus',
@@ -3548,13 +3384,12 @@ const torso = [
 		icon: '/assets/icons/armours/boreus/BorealResolve.png',
 		element: 'Frost',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 24,
+		map: 23,
 		DBmap: 4
 	},
 	{
@@ -3565,13 +3400,12 @@ const torso = [
 		icon: '/assets/icons/armours/charrogg/VolcanicAegis.png',
 		element: 'Blaze',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Aetherhunter',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 25,
+		map: 24,
 		DBmap: 6
 	},
 	{
@@ -3582,13 +3416,12 @@ const torso = [
 		icon: '/assets/icons/armours/drask/DraskscalePlate.png',
 		element: 'Shock',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Aetheric Attunement',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 26,
+		map: 25,
 		DBmap: 13
 	},
 	{
@@ -3599,13 +3432,12 @@ const torso = [
 		icon: '/assets/icons/armours/embermane/FieryBreastplate.png',
 		element: 'Blaze',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Evasive Fury',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 27,
+		map: 26,
 		DBmap: 14
 	},
 	{
@@ -3616,13 +3448,12 @@ const torso = [
 		icon: '/assets/icons/armours/generic/RecruitsBreastplate.png',
 		element: 'Neutral',
 		cell: 'None',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
 		effect: 0,
-		map: 28,
+		map: 27,
 		DBmap: 18
 	},
 	{
@@ -3633,13 +3464,12 @@ const torso = [
 		icon: '/assets/icons/armours/gnasher/GnasherCloak.png',
 		element: 'Neutral',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Tough',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 29,
+		map: 28,
 		DBmap: 23
 	},
 	{
@@ -3650,13 +3480,12 @@ const torso = [
 		icon: '/assets/icons/armours/hellion/HellplateCuirass.png',
 		element: 'Blaze',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Molten',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 30,
+		map: 29,
 		DBmap: 28
 	},
 	{
@@ -3667,13 +3496,12 @@ const torso = [
 		icon: '/assets/icons/armours/kharabak/ShellOfTheSwarm.png',
 		element: 'Terra',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Bladestorm',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 31,
+		map: 30,
 		DBmap: 33
 	},
 	{
@@ -3684,31 +3512,13 @@ const torso = [
 		icon: '/assets/icons/armours/koshai/MantleOfThorns.png',
 		element: 'Terra',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Predator',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 32,
+		map: 31,
 		DBmap: 35
-	},
-	{
-		type: 'Torso',
-		id: 'Malkarion',
-		name: 'Malkarion\'s Soul',
-		description: 'Torso protection forged from Malkarion trophies.',
-		icon: '/assets/icons/armours/malkarion/MalkarionsSoul.png',
-		element: 'Shock',
-		cell: 'Technique',
-		perk:
-		{
-			name: 'Aetherhunter',
-			type: 'Power'
-		},
-		effect: 0,
-		map: 33,
-		DBmap: 87
 	},
 	{
 		type: 'Torso',
@@ -3718,13 +3528,12 @@ const torso = [
 		icon: '/assets/icons/armours/nayzaga/ShockingHeart.png',
 		element: 'Shock',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Medic',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 34,
+		map: 32,
 		DBmap: 40
 	},
 	{
@@ -3735,13 +3544,12 @@ const torso = [
 		icon: '/assets/icons/armours/pangar/CoreOfIce.png',
 		element: 'Frost',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Fortress',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 35,
+		map: 33,
 		DBmap: 44
 	},
 	{
@@ -3752,13 +3560,12 @@ const torso = [
 		icon: '/assets/icons/armours/quillshot/QuillspikeJacket.png',
 		element: 'Neutral',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Savagery',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 36,
+		map: 34,
 		DBmap: 48
 	},
 	{
@@ -3769,13 +3576,12 @@ const torso = [
 		icon: '/assets/icons/armours/rezakiri/LightsVirtue.png',
 		element: 'Radiant',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Cunning',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 37,
+		map: 35,
 		DBmap: 52
 	},
 	{
@@ -3786,13 +3592,12 @@ const torso = [
 		icon: '/assets/icons/armours/riftstalker/MantleOfTheRift.png',
 		element: 'Umbral',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Conduit',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 38,
+		map: 36,
 		DBmap: 57
 	},
 	{
@@ -3803,13 +3608,12 @@ const torso = [
 		icon: '/assets/icons/armours/shrike/ShrikedownPlate.png',
 		element: 'Neutral',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Evasion',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 39,
+		map: 37,
 		DBmap: 62
 	},
 	{
@@ -3820,13 +3624,12 @@ const torso = [
 		icon: '/assets/icons/armours/shrowd/DarkMarrow.png',
 		element: 'Umbral',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 40,
+		map: 38,
 		DBmap: 64
 	},
 	{
@@ -3837,13 +3640,12 @@ const torso = [
 		icon: '/assets/icons/armours/skarn/HeartOfStone.png',
 		element: 'Terra',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Guardian',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 41,
+		map: 39,
 		DBmap: 68
 	},
 	{
@@ -3854,13 +3656,12 @@ const torso = [
 		icon: '/assets/icons/armours/skraev/SkraevwingJacket.png',
 		element: 'Frost',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Adrenaline',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 42,
+		map: 40,
 		DBmap: 75
 	},
 	{
@@ -3871,13 +3672,12 @@ const torso = [
 		icon: '/assets/icons/armours/stormclaw/LightningPlate.png',
 		element: 'Shock',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Energized',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 43,
+		map: 41,
 		DBmap: 79
 	},
 	{
@@ -3888,17 +3688,17 @@ const torso = [
 		icon: '/assets/icons/armours/valomyr/AegisOfValour.png',
 		element: 'Radiant',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Nine Lives',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 44,
+		map: 42,
 		DBmap: 80
 	}
 ]
-const arms = [
+const arms = 
+[
 	{
 		type: 'Arms',
 		id: 'Boreus',
@@ -3907,13 +3707,12 @@ const arms = [
 		icon: '/assets/icons/armours/boreus/BorealMight.png',
 		element: 'Frost',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 66,
+		map: 63,
 		DBmap: 3
 	},
 	{
@@ -3924,13 +3723,12 @@ const arms = [
 		icon: '/assets/icons/armours/charrogg/VolcanicGrips.png',
 		element: 'Blaze',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 67,
+		map: 64,
 		DBmap: 7
 	},
 	{
@@ -3941,13 +3739,12 @@ const arms = [
 		icon: '/assets/icons/armours/drask/DraskscaleGauntlets.png',
 		element: 'Shock',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Sharpened',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 68,
+		map: 65,
 		DBmap: 10
 	},
 	{
@@ -3958,13 +3755,12 @@ const arms = [
 		icon: '/assets/icons/armours/embermane/FieryGauntlets.png',
 		element: 'Blaze',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Fireproof',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 69,
+		map: 66,
 		DBmap: 15
 	},
 	{
@@ -3975,13 +3771,12 @@ const arms = [
 		icon: '/assets/icons/armours/generic/RecruitsGloves.png',
 		element: 'Neutral',
 		cell: 'None',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
 		effect: 0,
-		map: 70,
+		map: 67,
 		DBmap: 19
 	},
 	{
@@ -3992,13 +3787,12 @@ const arms = [
 		icon: '/assets/icons/armours/gnasher/GnasherGrips.png',
 		element: 'Neutral',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Ragehunter',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 71,
+		map: 68,
 		DBmap: 24
 	},
 	{
@@ -4009,13 +3803,12 @@ const arms = [
 		icon: '/assets/icons/armours/hellion/HellplateBracers.png',
 		element: 'Blaze',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Molten',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 72,
+		map: 69,
 		DBmap: 26
 	},
 	{
@@ -4026,13 +3819,12 @@ const arms = [
 		icon: '/assets/icons/armours/kharabak/ClutchesOfTheSwarm.png',
 		element: 'Terra',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Conditioning',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 73,
+		map: 70,
 		DBmap: 30
 	},
 	{
@@ -4043,31 +3835,13 @@ const arms = [
 		icon: '/assets/icons/armours/koshai/GraspOfThorns.png',
 		element: 'Terra',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Evasive Fury',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 74,
+		map: 71,
 		DBmap: 34
-	},
-	{
-		type: 'Arms',
-		id: 'Malkarion',
-		name: 'Malkarion\'s Grasp',
-		description: 'Arms protection forged from Malkarion trophies.',
-		icon: '/assets/icons/armours/malkarion/MalkarionsGrasp.png',
-		element: 'Shock',
-		cell: 'Technique',
-		perk:
-		{
-			name: 'Predator',
-			type: 'Technique'
-		},
-		effect: 0,
-		map: 75,
-		DBmap: 84
 	},
 	{
 		type: 'Arms',
@@ -4077,13 +3851,12 @@ const arms = [
 		icon: '/assets/icons/armours/nayzaga/ShockingGrasp.png',
 		element: 'Shock',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Aetheric Attunement',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 76,
+		map: 72,
 		DBmap: 39
 	},
 	{
@@ -4094,13 +3867,12 @@ const arms = [
 		icon: '/assets/icons/armours/pangar/ArmsOfIce.png',
 		element: 'Frost',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Knockout King',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 77,
+		map: 73,
 		DBmap: 42
 	},
 	{
@@ -4111,13 +3883,12 @@ const arms = [
 		icon: '/assets/icons/armours/quillshot/QuillspikeGrips.png',
 		element: 'Neutral',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Barbed',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 78,
+		map: 74,
 		DBmap: 47
 	},
 	{
@@ -4128,13 +3899,12 @@ const arms = [
 		icon: '/assets/icons/armours/rezakiri/LightsRefuge.png',
 		element: 'Radiant',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Conduit',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 79,
+		map: 75,
 		DBmap: 51
 	},
 	{
@@ -4145,13 +3915,12 @@ const arms = [
 		icon: '/assets/icons/armours/riftstalker/HandsOfTheRift.png',
 		element: 'Umbral',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Evasion',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 80,
+		map: 76,
 		DBmap: 56
 	},
 	{
@@ -4162,13 +3931,12 @@ const arms = [
 		icon: '/assets/icons/armours/shrike/ShrikedownGloves.png',
 		element: 'Neutral',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Weighted Strikes',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 81,
+		map: 77,
 		DBmap: 59
 	},
 	{
@@ -4179,13 +3947,12 @@ const arms = [
 		icon: '/assets/icons/armours/shrowd/DarkEmbrace.png',
 		element: 'Umbral',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Medic',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 82,
+		map: 78,
 		DBmap: 63
 	},
 	{
@@ -4196,13 +3963,12 @@ const arms = [
 		icon: '/assets/icons/armours/skarn/MightOfStone.png',
 		element: 'Terra',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Fortress',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 83,
+		map: 79,
 		DBmap: 69
 	},
 	{
@@ -4213,13 +3979,12 @@ const arms = [
 		icon: '/assets/icons/armours/skraev/SkraevwingGloves.png',
 		element: 'Frost',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Warmth',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 84,
+		map: 80,
 		DBmap: 73
 	},
 	{
@@ -4230,13 +3995,12 @@ const arms = [
 		icon: '/assets/icons/armours/stormclaw/LightningGloves.png',
 		element: 'Shock',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Insulated',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 85,
+		map: 81,
 		DBmap: 77
 	},
 	{
@@ -4247,17 +4011,17 @@ const arms = [
 		icon: '/assets/icons/armours/valomyr/GauntletsOfValour.png',
 		element: 'Radiant',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Lucent',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 86,
+		map: 82,
 		DBmap: 82
 	}
 ]
-const legs = [
+const legs = 
+[
 	{
 		type: 'Legs',
 		id: 'Boreus',
@@ -4266,13 +4030,12 @@ const legs = [
 		icon: '/assets/icons/armours/boreus/BorealMarch.png',
 		element: 'Frost',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Iceborne',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 45,
+		map: 43,
 		DBmap: 2
 	},
 	{
@@ -4283,13 +4046,12 @@ const legs = [
 		icon: '/assets/icons/armours/charrogg/VolcanicTreads.png',
 		element: 'Blaze',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Rage',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 46,
+		map: 44,
 		DBmap: 9
 	},
 	{
@@ -4300,13 +4062,12 @@ const legs = [
 		icon: '/assets/icons/armours/drask/DraskscaleGreaves.png',
 		element: 'Shock',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Fleet Footed',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 47,
+		map: 45,
 		DBmap: 11
 	},
 	{
@@ -4317,13 +4078,12 @@ const legs = [
 		icon: '/assets/icons/armours/embermane/FieryGreaves.png',
 		element: 'Blaze',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Evasion',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 48,
+		map: 46,
 		DBmap: 16
 	},
 	{
@@ -4334,13 +4094,12 @@ const legs = [
 		icon: '/assets/icons/armours/generic/RecruitsGreaves.png',
 		element: 'Neutral',
 		cell: 'None',
-		perk:
-		{
+		perk: {
 			name: 'None',
 			type: 'None'
 		},
 		effect: 0,
-		map: 49,
+		map: 47,
 		DBmap: 20
 	},
 	{
@@ -4351,13 +4110,12 @@ const legs = [
 		icon: '/assets/icons/armours/gnasher/GnasherTreads.png',
 		element: 'Neutral',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Tough',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 50,
+		map: 48,
 		DBmap: 25
 	},
 	{
@@ -4368,13 +4126,12 @@ const legs = [
 		icon: '/assets/icons/armours/hellion/HellplateGreaves.png',
 		element: 'Blaze',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Fortress',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 51,
+		map: 49,
 		DBmap: 29
 	},
 	{
@@ -4385,13 +4142,12 @@ const legs = [
 		icon: '/assets/icons/armours/kharabak/DanceOfTheSwarm.png',
 		element: 'Terra',
 		cell: 'Power',
-		perk:
-		{
+		perk: {
 			name: 'Conditioning',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 52,
+		map: 50,
 		DBmap: 31
 	},
 	{
@@ -4402,31 +4158,13 @@ const legs = [
 		icon: '/assets/icons/armours/koshai/StrideOfThorns.png',
 		element: 'Terra',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Predator',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 53,
+		map: 51,
 		DBmap: 36
-	},
-	{
-		type: 'Legs',
-		id: 'Malkarion',
-		name: 'Malkarion\'s March',
-		description: 'Leg and foot protection forged from Malkarion trophies.',
-		icon: '/assets/icons/armours/malkarion/MalkarionsMarch.png',
-		element: 'Shock',
-		cell: 'Technique',
-		perk:
-		{
-			name: 'Aetherhunter',
-			type: 'Power'
-		},
-		effect: 0,
-		map: 54,
-		DBmap: 85
 	},
 	{
 		type: 'Legs',
@@ -4436,13 +4174,12 @@ const legs = [
 		icon: '/assets/icons/armours/nayzaga/ShockingStride.png',
 		element: 'Shock',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Insulated',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 55,
+		map: 52,
 		DBmap: 41
 	},
 	{
@@ -4453,13 +4190,12 @@ const legs = [
 		icon: '/assets/icons/armours/pangar/FeetOfIce.png',
 		element: 'Frost',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Warmth',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 56,
+		map: 53,
 		DBmap: 45
 	},
 	{
@@ -4470,13 +4206,12 @@ const legs = [
 		icon: '/assets/icons/armours/quillshot/QuillspikeBoots.png',
 		element: 'Neutral',
 		cell: 'Technique',
-		perk:
-		{
+		perk: {
 			name: 'Shellshock Resist',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 57,
+		map: 54,
 		DBmap: 46
 	},
 	{
@@ -4487,13 +4222,12 @@ const legs = [
 		icon: '/assets/icons/armours/rezakiri/LightsWalk.png',
 		element: 'Radiant',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Agility',
 			type: 'Mobility'
 		},
 		effect: 0,
-		map: 58,
+		map: 55,
 		DBmap: 53
 	},
 	{
@@ -4504,13 +4238,12 @@ const legs = [
 		icon: '/assets/icons/armours/riftstalker/StridersOfTheRift.png',
 		element: 'Umbral',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Conduit',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 59,
+		map: 56,
 		DBmap: 58
 	},
 	{
@@ -4521,13 +4254,12 @@ const legs = [
 		icon: '/assets/icons/armours/shrike/ShrikedownGreaves.png',
 		element: 'Neutral',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Bloodless',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 60,
+		map: 57,
 		DBmap: 60
 	},
 	{
@@ -4538,13 +4270,12 @@ const legs = [
 		icon: '/assets/icons/armours/shrowd/DarkPath.png',
 		element: 'Umbral',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Nine Lives',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 61,
+		map: 58,
 		DBmap: 65
 	},
 	{
@@ -4555,13 +4286,12 @@ const legs = [
 		icon: '/assets/icons/armours/skarn/PillarsOfStone.png',
 		element: 'Terra',
 		cell: 'Defence',
-		perk:
-		{
+		perk: {
 			name: 'Guardian',
 			type: 'Defence'
 		},
 		effect: 0,
-		map: 62,
+		map: 59,
 		DBmap: 70
 	},
 	{
@@ -4572,13 +4302,12 @@ const legs = [
 		icon: '/assets/icons/armours/skraev/SkraevwingBoots.png',
 		element: 'Frost',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Adrenaline',
 			type: 'Technique'
 		},
 		effect: 0,
-		map: 63,
+		map: 60,
 		DBmap: 72
 	},
 	{
@@ -4589,13 +4318,12 @@ const legs = [
 		icon: '/assets/icons/armours/stormclaw/LightningBoots.png',
 		element: 'Shock',
 		cell: 'Mobility',
-		perk:
-		{
+		perk: {
 			name: 'Aetheric Frenzy',
 			type: 'Utility'
 		},
 		effect: 0,
-		map: 64,
+		map: 61,
 		DBmap: 76
 	},
 	{
@@ -4606,17 +4334,17 @@ const legs = [
 		icon: '/assets/icons/armours/valomyr/GreavesOfValour.png',
 		element: 'Radiant',
 		cell: 'Utility',
-		perk:
-		{
+		perk: {
 			name: 'Aetherhunter',
 			type: 'Power'
 		},
 		effect: 0,
-		map: 65,
+		map: 62,
 		DBmap: 83
 	}
 ]
-const weapon = [
+const weapon = 
+[
 	[
 		{
 			type: 'Aether Strikers',
@@ -4629,13 +4357,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Using Ammo generate 2 Frost Sprite that cause your next attack to deal 50 bonus damage and minor frost damage. Max 4 Sprites. ',
-			map: 87,
+			map: 83,
 			DBmap: 114
 		},
 		{
@@ -4649,13 +4376,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 88,
+			map: 84,
 			DBmap: 115
 		},
 		{
@@ -4669,13 +4395,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Heads',
-			map: 89,
+			map: 85,
 			DBmap: 116
 		},
 		{
@@ -4689,13 +4414,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The fifth hit in a row deals +150% stagger damage',
-			map: 90,
+			map: 86,
 			DBmap: 117
 		},
 		{
@@ -4709,13 +4433,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 91,
+			map: 87,
 			DBmap: 107
 		},
 		{
@@ -4729,13 +4452,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 92,
+			map: 88,
 			DBmap: 108
 		},
 		{
@@ -4749,13 +4471,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The eighth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 93,
+			map: 89,
 			DBmap: 118
 		},
 		{
@@ -4769,13 +4490,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Bladestorm',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 94,
+			map: 90,
 			DBmap: 119
 		},
 		{
@@ -4789,13 +4509,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 5 attacks deal 25% increased damage.',
-			map: 95,
+			map: 91,
 			DBmap: 109
 		},
 		{
@@ -4809,13 +4528,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Savagery',
 				type: 'Technique'
 			},
 			effect: 'Heal for 300 whenever a Behemoth is staggered.',
-			map: 96,
+			map: 92,
 			DBmap: 120
 		},
 		{
@@ -4829,13 +4547,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 97,
+			map: 93,
 			DBmap: 121
 		},
 		{
@@ -4849,13 +4566,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 98,
+			map: 94,
 			DBmap: 110
 		},
 		{
@@ -4869,13 +4585,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 99,
+			map: 95,
 			DBmap: 111
 		},
 		{
@@ -4889,13 +4604,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 100,
+			map: 96,
 			DBmap: 112
 		},
 		{
@@ -4909,13 +4623,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 101,
+			map: 97,
 			DBmap: 113
 		},
 		{
@@ -4929,13 +4642,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 102,
+			map: 98,
 			DBmap: 122
 		},
 		{
@@ -4949,13 +4661,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
-				name: 'Weighted Strikes',
-				type: 'Technique'
+			perk: {
+				name: 'Knockout King',
+				type: 'Power'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 103,
+			map: 99,
 			DBmap: 123
 		},
 		{
@@ -4969,13 +4680,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 104,
+			map: 100,
 			DBmap: 124
 		},
 		{
@@ -4989,13 +4699,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
-			effect: 'After dodging though an attack, extend Mantra timeout by 3 seconds',
-			map: 105,
+			effect: 'Reloads 3 hammer ammo after dodging through an attack',
+			map: 101,
 			DBmap: 125
 		},
 		{
@@ -5009,13 +4718,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 106,
+			map: 102,
 			DBmap: 126
 		}
 	],
@@ -5031,13 +4739,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Charge Attacks generate Frost Sprites that cause your next attack to deal 50 bonus damage and minor frost damage. Max 4 Sprites.',
-			map: 107,
+			map: 103,
 			DBmap: 5
 		},
 		{
@@ -5051,13 +4758,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 108,
+			map: 104,
 			DBmap: 7
 		},
 		{
@@ -5071,13 +4777,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Heads',
-			map: 109,
+			map: 105,
 			DBmap: 15
 		},
 		{
@@ -5091,13 +4796,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The fourth hit in quick succession deals 250 bonus part damage.',
-			map: 110,
+			map: 106,
 			DBmap: 21
 		},
 		{
@@ -5111,13 +4815,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 111,
+			map: 107,
 			DBmap: 22
 		},
 		{
@@ -5131,13 +4834,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 112,
+			map: 108,
 			DBmap: 29
 		},
 		{
@@ -5151,13 +4853,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The sixth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 113,
+			map: 109,
 			DBmap: 36
 		},
 		{
@@ -5171,13 +4872,12 @@ const weapon = [
 				'Power',
 				'Technique'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Deconstruction',
 				type: 'Power'
 			},
 			effect: 'Combo finishers deal 300 bonus part damage',
-			map: 114,
+			map: 110,
 			DBmap: 39
 		},
 		{
@@ -5191,13 +4891,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 2 attacks deal 25% increased damage.',
-			map: 115,
+			map: 111,
 			DBmap: 48
 		},
 		{
@@ -5211,13 +4910,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Savagery',
 				type: 'Technique'
 			},
 			effect: 'Heal 100 on perfectly charged vertical attacks',
-			map: 116,
+			map: 112,
 			DBmap: 53
 		},
 		{
@@ -5231,13 +4929,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 117,
+			map: 113,
 			DBmap: 56
 		},
 		{
@@ -5251,13 +4948,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 118,
+			map: 114,
 			DBmap: 60
 		},
 		{
@@ -5271,13 +4967,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 119,
+			map: 115,
 			DBmap: 66
 		},
 		{
@@ -5291,13 +4986,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 120,
+			map: 116,
 			DBmap: 70
 		},
 		{
@@ -5311,13 +5005,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 121,
+			map: 117,
 			DBmap: 79
 		},
 		{
@@ -5331,13 +5024,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 122,
+			map: 118,
 			DBmap: 83
 		},
 		{
@@ -5351,13 +5043,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 123,
+			map: 119,
 			DBmap: 86
 		},
 		{
@@ -5371,13 +5062,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 124,
+			map: 120,
 			DBmap: 91
 		},
 		{
@@ -5391,13 +5081,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Energized',
 				type: 'Utility'
 			},
 			effect: 'After dodging through an attack, the next weapon attack has 500% meter gain',
-			map: 125,
+			map: 121,
 			DBmap: 97
 		},
 		{
@@ -5411,13 +5100,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 126,
+			map: 122,
 			DBmap: 102
 		}
 	],
@@ -5433,13 +5121,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Using Pips generates 2 Frost Sprites that cause your next attack to deal 50 bonus damage and minor frost damage each. Max 4 Sprites.',
-			map: 127,
+			map: 123,
 			DBmap: 2
 		},
 		{
@@ -5453,13 +5140,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 128,
+			map: 124,
 			DBmap: 6
 		},
 		{
@@ -5473,13 +5159,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Tails',
-			map: 129,
+			map: 125,
 			DBmap: 13
 		},
 		{
@@ -5493,13 +5178,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The tenth hit in quick succession deals 250 bonus part damage.',
-			map: 130,
+			map: 126,
 			DBmap: 17
 		},
 		{
@@ -5513,13 +5197,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 131,
+			map: 127,
 			DBmap: 23
 		},
 		{
@@ -5533,13 +5216,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 132,
+			map: 128,
 			DBmap: 33
 		},
 		{
@@ -5553,13 +5235,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The tenth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 133,
+			map: 129,
 			DBmap: 37
 		},
 		{
@@ -5573,13 +5254,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Bladestorm',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 134,
+			map: 130,
 			DBmap: 43
 		},
 		{
@@ -5593,13 +5273,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 6 attacks deal 25% increased damage.',
-			map: 135,
+			map: 131,
 			DBmap: 45
 		},
 		{
@@ -5613,13 +5292,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Barbed',
 				type: 'Technique'
 			},
 			effect: '+5% lifesteal vs wounded parts',
-			map: 136,
+			map: 132,
 			DBmap: 52
 		},
 		{
@@ -5633,13 +5311,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Weighted Strikes',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 137,
+			map: 133,
 			DBmap: 55
 		},
 		{
@@ -5653,13 +5330,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 138,
+			map: 134,
 			DBmap: 59
 		},
 		{
@@ -5673,13 +5349,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 139,
+			map: 135,
 			DBmap: 67
 		},
 		{
@@ -5693,13 +5368,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 140,
+			map: 136,
 			DBmap: 74
 		},
 		{
@@ -5713,13 +5387,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 141,
+			map: 137,
 			DBmap: 77
 		},
 		{
@@ -5733,13 +5406,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 142,
+			map: 138,
 			DBmap: 80
 		},
 		{
@@ -5753,13 +5425,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Weighted Strikes',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 143,
+			map: 139,
 			DBmap: 87
 		},
 		{
@@ -5773,13 +5444,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 144,
+			map: 140,
 			DBmap: 95
 		},
 		{
@@ -5793,13 +5463,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Energized',
 				type: 'Utility'
 			},
 			effect: 'After dodging through an attack, the next weapon attack has 500% meter gain',
-			map: 145,
+			map: 141,
 			DBmap: 96
 		},
 		{
@@ -5813,13 +5482,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 146,
+			map: 142,
 			DBmap: 105
 		}
 	],
@@ -5835,13 +5503,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Using Ammo generates a Frost Sprite that cause your next attack to deal 50 bonus damage and minor frost damage. Max 4 Sprites. ',
-			map: 147,
+			map: 143,
 			DBmap: 1
 		},
 		{
@@ -5855,13 +5522,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 148,
+			map: 144,
 			DBmap: 8
 		},
 		{
@@ -5875,13 +5541,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 'Replaces all hammer blasts with unique fireball abilities that deal blaze damage.',
-			map: 149,
+			map: 145,
 			DBmap: 11
 		},
 		{
@@ -5895,13 +5560,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Heads',
-			map: 150,
+			map: 146,
 			DBmap: 14
 		},
 		{
@@ -5915,13 +5579,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The fifth hit in a row deals +150% stagger damage',
-			map: 151,
+			map: 147,
 			DBmap: 19
 		},
 		{
@@ -5935,13 +5598,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 152,
+			map: 148,
 			DBmap: 24
 		},
 		{
@@ -5955,13 +5617,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 153,
+			map: 149,
 			DBmap: 31
 		},
 		{
@@ -5975,13 +5636,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The sixth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 154,
+			map: 150,
 			DBmap: 35
 		},
 		{
@@ -5995,13 +5655,12 @@ const weapon = [
 				'Power',
 				'Technique'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Deconstruction',
 				type: 'Power'
 			},
 			effect: 'Restore 40 Stamina after reloading a shell',
-			map: 155,
+			map: 151,
 			DBmap: 40
 		},
 		{
@@ -6015,13 +5674,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 2 attacks deal 25% increased damage.',
-			map: 156,
+			map: 152,
 			DBmap: 44
 		},
 		{
@@ -6035,13 +5693,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Savagery',
 				type: 'Technique'
 			},
 			effect: 'Heal for 300 whenever a Behemoth is staggered.',
-			map: 157,
+			map: 153,
 			DBmap: 49
 		},
 		{
@@ -6055,13 +5712,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 158,
+			map: 154,
 			DBmap: 57
 		},
 		{
@@ -6075,13 +5731,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 159,
+			map: 155,
 			DBmap: 62
 		},
 		{
@@ -6095,13 +5750,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 160,
+			map: 156,
 			DBmap: 64
 		},
 		{
@@ -6115,13 +5769,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 161,
+			map: 157,
 			DBmap: 71
 		},
 		{
@@ -6135,13 +5788,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 162,
+			map: 158,
 			DBmap: 76
 		},
 		{
@@ -6155,13 +5807,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 163,
+			map: 159,
 			DBmap: 81
 		},
 		{
@@ -6175,13 +5826,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 164,
+			map: 160,
 			DBmap: 90
 		},
 		{
@@ -6195,13 +5845,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 165,
+			map: 161,
 			DBmap: 93
 		},
 		{
@@ -6215,13 +5864,12 @@ const weapon = [
 				'Power',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: 'Reloads 3 hammer ammo after dodging through an attack',
-			map: 166,
+			map: 162,
 			DBmap: 98
 		},
 		{
@@ -6235,13 +5883,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 167,
+			map: 163,
 			DBmap: 101
 		}
 	],
@@ -6257,13 +5904,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 168,
+			map: 164,
 			DBmap: 27
 		},
 		{
@@ -6277,13 +5923,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 'Dash in a direction, becoming invulnerable for the duration. After dodging through an attack, fire 6 mini-shots that always crit. While in Mag Bomb mode, fires 2 Mag Bombs instead.',
-			map: 169,
+			map: 165,
 			DBmap: 106
 		}
 	],
@@ -6299,13 +5944,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Using a Special continually generates Frost Sprites that cause your next attack to deal 50 bonus damage and minor frost damage. Max 4 Sprites.',
-			map: 170,
+			map: 166,
 			DBmap: 3
 		},
 		{
@@ -6319,13 +5963,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 171,
+			map: 167,
 			DBmap: 9
 		},
 		{
@@ -6339,13 +5982,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Tails',
-			map: 172,
+			map: 168,
 			DBmap: 12
 		},
 		{
@@ -6359,13 +6001,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The seventh hit in a row deals +250% part damage',
-			map: 173,
+			map: 169,
 			DBmap: 18
 		},
 		{
@@ -6379,13 +6020,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 174,
+			map: 170,
 			DBmap: 25
 		},
 		{
@@ -6399,13 +6039,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 175,
+			map: 171,
 			DBmap: 28
 		},
 		{
@@ -6419,13 +6058,12 @@ const weapon = [
 				'Utility',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 176,
+			map: 172,
 			DBmap: 30
 		},
 		{
@@ -6439,13 +6077,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The eighth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 177,
+			map: 173,
 			DBmap: 38
 		},
 		{
@@ -6459,13 +6096,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Bladestorm',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 178,
+			map: 174,
 			DBmap: 41
 		},
 		{
@@ -6479,13 +6115,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 4 attacks deal 25% increased damage.',
-			map: 179,
+			map: 175,
 			DBmap: 47
 		},
 		{
@@ -6499,13 +6134,12 @@ const weapon = [
 				'Utility',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Barbed',
 				type: 'Technique'
 			},
 			effect: '+5% lifesteal vs wounded parts',
-			map: 180,
+			map: 176,
 			DBmap: 51
 		},
 		{
@@ -6519,13 +6153,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 181,
+			map: 177,
 			DBmap: 54
 		},
 		{
@@ -6539,13 +6172,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 182,
+			map: 178,
 			DBmap: 63
 		},
 		{
@@ -6559,13 +6191,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 183,
+			map: 179,
 			DBmap: 65
 		},
 		{
@@ -6579,13 +6210,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 184,
+			map: 180,
 			DBmap: 73
 		},
 		{
@@ -6599,13 +6229,12 @@ const weapon = [
 				'Mobility',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 185,
+			map: 181,
 			DBmap: 75
 		},
 		{
@@ -6619,13 +6248,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 'Activate to enter Feast, taking damage over time but gaining significant lifesteal, attack speed, and creating aetheric waves with each attack that deal area damage.',
-			map: 186,
+			map: 182,
 			DBmap: 84
 		},
 		{
@@ -6639,13 +6267,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 187,
+			map: 183,
 			DBmap: 85
 		},
 		{
@@ -6659,13 +6286,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Knockout King',
 				type: 'Power'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 188,
+			map: 184,
 			DBmap: 88
 		},
 		{
@@ -6679,13 +6305,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 189,
+			map: 185,
 			DBmap: 92
 		},
 		{
@@ -6699,13 +6324,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Energized',
 				type: 'Utility'
 			},
-			effect: 'After dodging through an attack, the next weapon attack has 300% meter gain',
-			map: 190,
+			effect: 'After dodging through an attack, the next weapon attack has 500% meter gain',
+			map: 186,
 			DBmap: 100
 		},
 		{
@@ -6719,13 +6343,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 191,
+			map: 187,
 			DBmap: 104
 		}
 	],
@@ -6741,13 +6364,12 @@ const weapon = [
 				'Power',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: 'Using Ammo generates Frost Sprites (base on ammo quality) that cause your next attack to deal 50 bonus damage and minor frost damage. Max 4 Sprites. ',
-			map: 192,
+			map: 188,
 			DBmap: 4
 		},
 		{
@@ -6761,13 +6383,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 193,
+			map: 189,
 			DBmap: 10
 		},
 		{
@@ -6781,13 +6402,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetheric Attunement',
 				type: 'Utility'
 			},
 			effect: '30% damage vs Behemoth Tails',
-			map: 194,
+			map: 190,
 			DBmap: 16
 		},
 		{
@@ -6801,13 +6421,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Evasive Fury',
 				type: 'Technique'
 			},
 			effect: 'The seventh hit in a row deals +300 wound damage',
-			map: 195,
+			map: 191,
 			DBmap: 20
 		},
 		{
@@ -6821,13 +6440,12 @@ const weapon = [
 				'None',
 				'None'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 0,
-			map: 196,
+			map: 192,
 			DBmap: 26
 		},
 		{
@@ -6841,13 +6459,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Ragehunter',
 				type: 'Power'
 			},
 			effect: 0,
-			map: 197,
+			map: 193,
 			DBmap: 32
 		},
 		{
@@ -6861,13 +6478,12 @@ const weapon = [
 				'Power',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Overpower',
 				type: 'Power'
 			},
 			effect: 'The eighth hit in quick succession deals 250 bonus damage and major blaze damage',
-			map: 198,
+			map: 194,
 			DBmap: 34
 		},
 		{
@@ -6881,13 +6497,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Bladestorm',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 199,
+			map: 195,
 			DBmap: 42
 		},
 		{
@@ -6901,13 +6516,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Sharpened',
 				type: 'Power'
 			},
 			effect: 'After not dealing damage for 6 seconds, the next 5 attacks deal 25% increased damage.',
-			map: 200,
+			map: 196,
 			DBmap: 46
 		},
 		{
@@ -6921,13 +6535,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Barbed',
 				type: 'Technique'
 			},
 			effect: '+5% lifesteal vs wounded parts',
-			map: 201,
+			map: 197,
 			DBmap: 50
 		},
 		{
@@ -6941,13 +6554,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Weighted Strikes',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 202,
+			map: 198,
 			DBmap: 58
 		},
 		{
@@ -6961,13 +6573,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Acidic',
 				type: 'Technique'
 			},
 			effect: 0,
-			map: 203,
+			map: 199,
 			DBmap: 61
 		},
 		{
@@ -6981,13 +6592,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: '10% chance for attacks to Hit twice.',
-			map: 204,
+			map: 200,
 			DBmap: 68
 		},
 		{
@@ -7001,13 +6611,12 @@ const weapon = [
 				'Technique',
 				'Power'
 			],
-			perk:
-			{
+			perk: {
 				name: 'None',
 				type: 'None'
 			},
 			effect: 'Channel a beam that deals increasing damage, up to 200%, while it continues to hit a target.',
-			map: 205,
+			map: 201,
 			DBmap: 69
 		},
 		{
@@ -7021,13 +6630,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Wild Frenzy',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.5% for 5 seconds. If 5 or more orbs are present, the bonus doubles.',
-			map: 206,
+			map: 202,
 			DBmap: 72
 		},
 		{
@@ -7041,13 +6649,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Conditioning',
 				type: 'Mobility'
 			},
 			effect: '+100 part damage on next hit after a dodge.',
-			map: 207,
+			map: 203,
 			DBmap: 78
 		},
 		{
@@ -7061,13 +6668,12 @@ const weapon = [
 				'Technique',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Cunning',
 				type: 'Technique'
 			},
 			effect: 'When under 20% health, deal +50% damage',
-			map: 208,
+			map: 204,
 			DBmap: 82
 		},
 		{
@@ -7081,13 +6687,12 @@ const weapon = [
 				'Technique',
 				'Defence'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Weighted Strikes',
 				type: 'Technique'
 			},
 			effect: 'Dealing damage has a chance (based on damage dealt) to grant a stacking, refreshing 40 health shield that lasts for 12s',
-			map: 209,
+			map: 205,
 			DBmap: 89
 		},
 		{
@@ -7101,13 +6706,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Nimble',
 				type: 'Mobility'
 			},
 			effect: 'Evading drops 3 Ice Mines on a 30 second cooldown.',
-			map: 210,
+			map: 206,
 			DBmap: 94
 		},
 		{
@@ -7121,13 +6725,12 @@ const weapon = [
 				'Technique',
 				'Mobility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Energized',
 				type: 'Utility'
 			},
 			effect: 'After dodging through an attack, the next weapon attack has 500% meter gain',
-			map: 211,
+			map: 207,
 			DBmap: 99
 		},
 		{
@@ -7141,13 +6744,12 @@ const weapon = [
 				'Power',
 				'Utility'
 			],
-			perk:
-			{
+			perk: {
 				name: 'Aetherhunter',
 				type: 'Power'
 			},
 			effect: 'Once charged, your next attack will deal 550 bonus radiant damage. Charge rate increases with current health.',
-			map: 212,
+			map: 208,
 			DBmap: 103
 		}
 	]
