@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,GAAG;CACV;;ADAD,AAAA,IAAI,CAAC;EACJ,mBAAmB,EAAE,IAAI;EACzB,gBAAgB;EAChB,gBAAgB,EAAE,IAAI;EACtB,iBAAiB;EACjB,eAAe,EAAE,IAAI;EACrB,oBAAoB;EACpB,WAAW,EAAE,IAAI;EACjB,mBAAmB;CACnB",
+    "sources": [
+        "../BU/livesasstest.scss",
+        "../BU/rest.scss"
+    ],
+    "names": [],
+    "file": "livesasstest.css"
+}
