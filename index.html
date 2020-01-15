@@ -125,6 +125,8 @@
            activeTab.classList.add("active");
            selector.style.left = activeTab.offsetLeft + "px";
            selector.style.width = activeTab.clientWidth + "px";
+           navWrapper.scroll(activeTab.offsetLeft + activeTab.clientWidth - navWrapper.clientWidth, 0)
+           console.log(activeTab.offsetLeft + activeTab.clientWidth - navWrapper.clientWidth)
        }
    
        function setActiveTab(targetTab) {
