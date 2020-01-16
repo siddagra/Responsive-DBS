@@ -71,7 +71,7 @@
                                 <a href="#slide-11"><i class="fas fa-burn"></i>Legs</a>
                             </div>
                             <div class="child slider" style="grid-template-columns: repeat(6,1fr);">
-                                <div class="child slide" id="slide-6">1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>
+                                <div class="child slide" id="slide-6">1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>1dsad</br>
                                 </div>
                                 <div class="child slide" id="slide-7">2dwwsad</br>2dwwsad</br>2dwwsad</br>2dwwsad</br>2dwwsad</br>2dwwsad</br>
                                 </div>
@@ -157,27 +157,21 @@
 
          let observer = new IntersectionObserver(function (entries, observer) {
             entries.forEach(entry => {
-               if (entry.isIntersecting) {
+               if (entry.intersectionRect.width / entry.boundingClientRect.width > 0.8) {
                   for (let i = 0; i < tabList.length; i++) {
                      if (entry.target.id == tabList[i].href.split("#")[1]) {
                         updateTabSelector(tabList[i])
                      }
                   }
+                  if (entry.target.className == "slide")
+                     slidingTabsLists[n].getElementsByClassName("slider")[0].style.height = entry.target.clientHeight + "px";
                }
             })
-         }, { root: slidingTabsLists[n].getElementsByClassName("slider")[0], threshold: 0.8 });
+         }, { root: slidingTabsLists[n].getElementsByClassName("slider")[0], threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0] });
 
-         let observer2 = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(entry => {
-               if (entry.isIntersecting && entry.target.className == "slide")
-                  slidingTabsLists[n].getElementsByClassName("slider")[0].style.height = entry.target.clientHeight + "px";
-            })
-         }, { root: slidingTabsLists[n].getElementsByClassName("slider")[0], threshold: 0.001 });
 
          let slideList = document.getElementsByClassName("slide");
-         for (i = 0; i < slideList.length; i++) {
+         for (i = 0; i < slideList.length; i++)
             observer.observe(slideList[i]);
-            observer2.observe(slideList[i]);
-         }
       }
    </script>
