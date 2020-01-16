@@ -95,7 +95,7 @@ body {
 .navWrapper a i {
 }
 
-.navWrapper.selector {
+.navWrapper .selector {
 	height: 100%;
 	display: inline-block;
 	position: absolute;
