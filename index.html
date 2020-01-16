@@ -129,12 +129,15 @@
 <script src=js/materialize.min.js> </script>
    <script>
       M.AutoInit();
-      let slidingTabsLists = document.getElementsByClassName("sliding-tabs");
+      var slidingTabsLists = document.getElementsByClassName("sliding-tabs");
+
       for (let n = 0; n < slidingTabsLists.length; n++) {
-         let navWrapper = slidingTabsLists[n].getElementsByClassName('navWrapper')[0];
-         let tabList = navWrapper.getElementsByTagName("a");
-         let selector = navWrapper.getElementsByClassName("selector")[0];
-         let activeTab = navWrapper.getElementsByClassName("active")[0];
+         var navWrapper = slidingTabsLists[n].getElementsByClassName('navWrapper')[0];
+
+         var tabList = navWrapper.getElementsByTagName("a");
+         var selector = navWrapper.getElementsByClassName("selector")[0];
+         var activeTab = navWrapper.getElementsByClassName("active")[0];
+
          selector.style.left = activeTab.offsetLeft + "px";
          selector.style.width = activeTab.clientWidth + "px";
 
